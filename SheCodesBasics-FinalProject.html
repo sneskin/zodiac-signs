@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #23313b;
+        background: #f0f5f9;
+        text-align: center;
+      }
+
+      header {
+        background: #155263;
+        color: #ffffff;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 1em;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 2em;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 0.5em;
+      }
+
+      button {
+        font-size: 22px;
+        background: #155263;
+        color: #ffffff;
+        border: none;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        border-radius: 15px;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #ff9a3c;
+      }
+
+      .zodiacCharacteristics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .zodiacSign {
+        padding: 1em;
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1em;
+        border-radius: 15px;
+      }
+
+      .zodiacSign img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+      }
+
+      .highlight {
+        background-color: rgba(
+          255,
+          223,
+          0,
+          0.5
+        ); /* Yellow with some transparency */
+        border: 2px solid rgba(255, 223, 0, 0.8); /* Slightly darker border */
+        box-shadow: 0 0 10px rgba(255, 223, 0, 0.8); /* Soft shadow */
+        transition: background-color 0.3s ease, border-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1em 0;
+        background: #155263;
+        color: #ffffff;
+      }
+    </style>
+
+    <title>Zodiac Signs and Astrology</title>
+  </head>
+  <body>
+    <header>
+      <h1>Zodiac Signs and Astrology</h1>
+      <nav>
+        <a href="#zodiac">Zodiac Signs</a>
+        <a href="#characteristics">Characteristics</a>
+      </nav>
+    </header>
+    <main>
+      <section id="zodiac">
+        <h2>Discover Your Zodiac Sign</h2>
+        <p>
+          Explore the fascinating world of zodiac signs and their
+          characteristics. Uncover the secrets of your personality,
+          relationships, and more.
+        </p>
+        <button id="zodiacButton">Find Your Sign</button>
+      </section>
+      <section id="characteristics">
+        <h2>Characteristics of Zodiac Signs</h2>
+        <div class="zodiacCharacteristics">
+          <div class="zodiacSign" id="capricorn">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/688/original/capricorn-sign.png?1692184010"
+              alt="Capricorn Sign"
+            />
+            <h3>Capricorn (December 22 - January 19)</h3>
+            <p>
+              Capricorns are disciplined and ambitious individuals who possess a
+              strong work ethic. They are driven by a desire for success and are
+              willing to put in the hard work to achieve their goals. Practical
+              and responsible, Capricorns often take on leadership roles and
+              excel in positions of authority. They value tradition and are
+              known for their sense of duty and responsibility.
+            </p>
+          </div>
+          <div class="zodiacSign" id="aquarius">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/686/original/aquarius-sign.png?1692183957"
+              alt="Aquarius Sign"
+            />
+            <h3>Aquarius (January 20 - February 18)</h3>
+            <p>
+              Aquarians are innovative and open-minded individuals who have a
+              strong sense of humanitarianism. They are visionaries who are
+              often ahead of their time and are drawn to advocating for social
+              change. Their unconventional and eccentric nature makes them stand
+              out, and they thrive in environments that allow them to express
+              their unique ideas. Aquarians are natural advocates for progress
+              and equality.
+            </p>
+          </div>
+          <div class="zodiacSign" id="pisces">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/685/original/pisces-sign.png?1692183923"
+              alt="Pisces Sign"
+            />
+            <h3>Pisces (February 19 - March 20)</h3>
+            <p>
+              Pisces individuals are compassionate and artistic souls with a
+              deep sense of empathy. They have a natural inclination toward
+              creativity and are often drawn to artistic and imaginative
+              pursuits. Their sensitive and intuitive nature allows them to
+              connect with others on a profound level. Pisces individuals
+              possess a dreamy and romantic spirit, often seeking to find
+              meaning and beauty in the world around them.
+            </p>
+          </div>
+          <div class="zodiacSign" id="aries">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/679/original/aries-sign.png?1692183294"
+              alt="Aries Sign"
+            />
+            <h3>Aries (March 21 - April 19)</h3>
+            <p>
+              Aries individuals are known for their bold and assertive nature.
+              They are natural leaders and pioneers, always eager to take on new
+              challenges with energy and enthusiasm. Their impulsive and
+              adventurous spirit drives them to explore uncharted territories,
+              while their passion and competitive drive fuel their pursuit of
+              success. Aries individuals are not afraid to stand up for what
+              they believe in and are often at the forefront of change.
+            </p>
+          </div>
+          <div class="zodiacSign" id="taurus">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/697/original/taurus-sign.png?1692184177"
+              alt="Taurus Sign"
+            />
+            <h3>Taurus (April 20 - May 20)</h3>
+            <p>
+              Taurus individuals exude practicality and reliability. They have a
+              strong appreciation for the finer things in life and are often
+              drawn to beauty and comfort. Their patient and determined nature
+              makes them excellent at achieving their goals, and they are known
+              for their stability and loyalty. Taurus individuals value strong
+              relationships and are fiercely protective of their loved ones.
+            </p>
+          </div>
+          <div class="zodiacSign" id="gemini">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/696/original/gemini-sign.png?1692184164"
+              alt="Gemini Sign"
+            />
+            <h3>Gemini (May 21 - June 20)</h3>
+            <p>
+              Geminis are curious and adaptable individuals with a quick wit and
+              excellent communication skills. They have a dual nature that
+              represents their ability to see both sides of an issue. Their
+              social and expressive tendencies make them natural
+              conversationalists, and they thrive in situations that allow them
+              to engage with others intellectually. Geminis have a love for
+              learning and are constantly seeking new experiences.
+            </p>
+          </div>
+          <div class="zodiacSign" id="cancer">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/694/original/cancer-sign.png?1692184133"
+              alt="Cancer Sign"
+            />
+            <h3>Cancer (June 21 - July 22)</h3>
+            <p>
+              Cancer individuals are known for their nurturing and empathetic
+              nature. They have a strong intuition and are often attuned to the
+              emotions of those around them. Family and home are of utmost
+              importance to them, and they create a safe and comforting
+              environment for their loved ones. Their imaginative and creative
+              spirit allows them to excel in artistic pursuits.
+            </p>
+          </div>
+          <div class="zodiacSign" id="leo">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/693/original/leo-sign.png?1692184123"
+              alt="Leo Sign"
+            />
+            <h3>Leo (July 23 - August 22)</h3>
+            <p>
+              Leos are charismatic and confident individuals who naturally
+              command attention. They have a creative and theatrical flair that
+              draws people toward them. Natural leaders, Leos are often found at
+              the center of social gatherings and enjoy performing for an
+              audience. They have a generous heart and are driven by a desire
+              for recognition and appreciation.
+            </p>
+          </div>
+          <div class="zodiacSign" id="virgo">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/692/original/virgo-sign.png?1692184105"
+              alt="Virgo Sign"
+            />
+            <h3>Virgo (August 23 - September 22)</h3>
+            <p>
+              Virgos possess a practical and analytical mindset, coupled with an
+              eye for detail. They excel at organization and are often the ones
+              to ensure everything runs smoothly. Their service-oriented nature
+              makes them reliable and helpful friends and colleagues. Virgos
+              have a strong sense of duty and are perfectionists who strive for
+              excellence in everything they do.
+            </p>
+          </div>
+          <div class="zodiacSign" id="libra">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/691/original/libra-sign.png?1692184087"
+              alt="Libra Sign"
+            />
+            <h3>Libra (September 23 - October 22)</h3>
+            <p>
+              Libras are charming and diplomatic individuals who value harmony
+              and balance. They have a natural sense of fairness and are often
+              advocates for justice. Relationships are important to them, and
+              they strive to create harmonious connections with others. Libras
+              have a love for beauty and aesthetics and often express themselves
+              through creative endeavors.
+            </p>
+          </div>
+          <div class="zodiacSign" id="scorpio">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/690/original/scorpio-sign.png?1692184059"
+              alt="Scorpio Sign"
+            />
+            <h3>Scorpio (October 23 - November 21)</h3>
+            <p>
+              Scorpios are intense and passionate individuals with a deep and
+              probing mind. They are drawn to uncovering mysteries and are
+              skilled at investigation and research. Their magnetic personality
+              makes them captivating to others, and they have a transformative
+              spirit that allows them to reinvent themselves. Scorpios are known
+              for their emotional depth and their ability to form profound
+              connections.
+            </p>
+          </div>
+          <div class="zodiacSign" id="sagittarius">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/689/original/sagittarius-sign.png?1692184045"
+              alt="Sagittarius Sign"
+            />
+            <h3>Sagittarius (November 22 - December 21)</h3>
+            <p>
+              Sagittarians are adventurous and optimistic souls who are
+              constantly seeking new experiences. They have a philosophical
+              outlook on life and are driven by a desire to expand their
+              horizons. Their independent spirit and love for exploration lead
+              them to venture into uncharted territories. Sagittarians are known
+              for their enthusiasm and are often the life of the party.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Coded by Seyda Eskin ❤️</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const zodiacButton = document.getElementById("zodiacButton");
+
+        zodiacButton.addEventListener("click", function () {
+          const userInput = prompt("Enter your birthdate (MM/DD):");
+          if (userInput) {
+            const birthdate = new Date(`2023-${userInput}`);
+            const zodiacSign = getZodiacSign(birthdate);
+
+            // Remove highlight from previous result
+            const highlightedResult = document.querySelector(".highlight");
+            if (highlightedResult) {
+              highlightedResult.classList.remove("highlight");
+            }
+
+            // Highlight the current result
+            const currentResult = document.getElementById(
+              zodiacSign.toLowerCase()
+            );
+            if (currentResult) {
+              currentResult.classList.add("highlight");
+            }
+
+            // Scroll to the corresponding zodiac sign section
+            scrollToZodiacSign(zodiacSign);
+          } else {
+            alert("Please enter a valid birthdate.");
+          }
+        });
+
+        function getZodiacSign(birthdate) {
+          const month = birthdate.getMonth() + 1; // Adding 1 since getMonth() returns 0-based months
+          const day = birthdate.getDate();
+
+          if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+            return "Aries";
+          } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+            return "Taurus";
+          } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+            return "Gemini";
+          } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+            return "Cancer";
+          } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+            return "Leo";
+          } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+            return "Virgo";
+          } else if (
+            (month === 9 && day >= 23) ||
+            (month === 10 && day <= 22)
+          ) {
+            return "Libra";
+          } else if (
+            (month === 10 && day >= 23) ||
+            (month === 11 && day <= 21)
+          ) {
+            return "Scorpio";
+          } else if (
+            (month === 11 && day >= 22) ||
+            (month === 12 && day <= 21)
+          ) {
+            return "Sagittarius";
+          } else if (
+            (month === 12 && day >= 22) ||
+            (month === 1 && day <= 19)
+          ) {
+            return "Capricorn";
+          } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+            return "Aquarius";
+          } else {
+            return "Pisces";
+          }
+        }
+      });
+
+      // Define the scrollToZodiacSign function outside the DOMContentLoaded event listener
+      function scrollToZodiacSign(zodiacSign) {
+        const targetSection = document.getElementById(zodiacSign.toLowerCase());
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
